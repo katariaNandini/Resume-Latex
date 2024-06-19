@@ -1,0 +1,211 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Nandini Kataria} \\ \vspace{1pt}
+    \small 7838443339 $|$ \href{mailto:nk366@snu.edu.in}{\underline{nk366@snu.edu.in}} $|$ 
+    \href{https://www.linkedin.com/in/nandini-kataria-b77a41200/}{\underline{linkedin.com/in/nandini-kataria-b77a41200}} $|$
+    \href{https://github.com/katariaNandini}{\underline{github.com/katariaNandini}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Shiv Nadar Institution of Eminence}{Greater Noida, Uttar Pradesh}
+    {Bachelor of Technology in Computer Science and Engineering}{Aug. 2022 -- May 2026}
+  \resumeSubheading
+    {Ch.Chhabil Das Public School}{Ghaziabad, Uttar Pradesh}
+    {Senior Secondary Education (12th)}{2021 -- 2022, 91\%}
+  \resumeSubheading
+    {Ch.Chhabil Das Public School}{Ghaziabad, Uttar Pradesh}
+    {Secondary Education (10th)}{2019 -- 2020, 89\%}
+\resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Summer Intern}{May 2024 -- Present}
+      {ONGC Ltd.}{Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Redesigned UI elements of news portals to enhance usability and aesthetics}
+        \resumeItem{Conducted user research and created wireframes for improved user flows}
+        \resumeItem{Developed and integrated new designs using the Laravel framework}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {HR Intern}{Dec. 2023 -- Jan. 2024}
+      {TopTrove Foundation}{Remote}
+      \resumeItemListStart
+        \resumeItem{Filling positions within the organization and developing its network of suitable candidates}
+        \resumeItem{Interviewing candidates and working with the organization to develop a recruitment plan}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{SnuWheelz - Cycle Renting Website} $|$ \emph{HTML, CSS, JavaScript, Node.js, Express.js, MySQL}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a cycle renting platform with features like booking, feedback, cycle locations, and team information}
+            \resumeItem{Utilized HTML, CSS, and JavaScript for the frontend; Node.js and Express.js for the backend}
+            \resumeItem{Managed data storage with MySQL}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Blog Website} $|$ \emph{Node.js, EJS, Express}}{}
+          \resumeItemListStart
+            \resumeItem{Created a dynamic blog site with features for adding, editing, and deleting articles}
+            \resumeItem{Implemented user-friendly article management including date, timing, title, description, and content details}
+            \resumeItem{Showcased all articles on a curated home page using Node.js and Express for the backend, and EJS for the frontend}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Drum Kit} $|$ \emph{JavaScript}}{}
+          \resumeItemListStart
+            \resumeItem{Implemented dynamic features like keyboard events, animations, and sound playback, showcasing advanced JavaScript skills}
+            \resumeItem{Demonstrated proficiency in manipulating JavaScript objects, their methods, and utilizing the dot notation for effective web development}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: HTML, CSS, JavaScript, C++, C, PHP, SQL (MySQL)} \\
+     \textbf{Frameworks}{: React.js, Node.js, Express.js, EJS, Laravel} \\
+     \textbf{Libraries}{: JQuery} \\
+     \textbf{Tools}{: Git, VS Code}
+    }}
+ \end{itemize}
+
+%-----------CERTIFICATES-----------
+\section{Certificates}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming, Data Structures and Algorithms Using Python}{, IIT Madras (Jul. 2023 -- Sep. 2023)} \\
+     \textbf{The Complete 2023 Web Development Bootcamp}{, Udemy} \\
+     \textbf{Object Oriented Programming Data Structures}{, Shiv Nadar University} \\
+      \textbf{Introduction to Database System}{, Shiv Nadar University} \\
+      \textbf{Data Structures}{, Shiv Nadar University} \\
+    }}
+ \end{itemize}
+
+
+%-----------LANGUAGES-----------
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{English} \\
+     \textbf{Hindi} \\
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
